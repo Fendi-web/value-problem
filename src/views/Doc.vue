@@ -29,9 +29,27 @@
     </div>
 </template>
 <script lang="ts">
-import Topnav from '../components/Topnav.vue'
+import Topnav from '../components/Topnav.vue';
 export default {
-    components:{Topnav}
+    components:{Topnav},
     
-}
+};
 </script>
+<style lang="scss" scoped>
+aside{
+    background:lightblue;
+    position:fixed;
+    top:0;
+    left:0;
+    >h2{
+        margin-bottom:4px;
+    }
+    >ol{
+        >li{
+            padding:4px 0;
+        }
+    }
+
+}
+    
+</style>
