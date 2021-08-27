@@ -29,24 +29,33 @@
     </div>
 </template>
 <script lang="ts">
+
 import Topnav from '../components/Topnav.vue';
+import { inject, Ref } from 'Vue';
 export default {
     components:{Topnav},
+    setup(){
+        const menuVisible = inject<Ref<boolean>>('xxx')  
+        
+    }
     
 };
 </script>
 <style lang="scss" scoped>
 aside{
     background:lightblue;
-    position:fixed;
+    width: 150px;
+    padding:16px;
+    position: fixed;
     top:0;
     left:0;
+    padding-top: 90px;
     >h2{
-        margin-bottom:4px;
+        margin-bottom:9px;
     }
     >ol{
         >li{
-            padding:4px 0;
+            padding:9px 0;
         }
     }
 
